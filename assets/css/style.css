@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;600;700&display=swap');
+
+:root{
+    /*Navbar and home page colors*/
+    --gr:#777;
+    --bl1:#222;
+    --or:#f58d17;
+    --or2:#d37810;
+    --wh1:#fff;
+}
+
+
+body{
+    font-family: 'Spline Sans', sans-serif;
+    color: var(--gr);
+    line-height: 1.7;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    color: var(--bl1);
+}
+
+a{
+    color: var(--bl1);
+    text-decoration: none;
+    transition: all 0.4s;
+    font-weight: 600;
+}
+
+a:hover{
+    color: var(--or);
+}
+
+#logonav {
+    width: 70px !important;
+}
+
+img{
+    width: 100%;
+}
+
+section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.btn{
+    border-radius: 0;
+    padding: 14px 38px;
+}
+
+.btn-brand{
+    background-color: var(--or);
+    color: var(--wh1);
+    font-weight: 500;
+    border-color: var(--or);
+}
+
+.btn-brand:hover{
+    background-color: var(--or2);
+    border-color: var(--or2);
+    color: var(--wh1);
+}
+
+.bg-cover {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+/*SliderHero*/
+
+.slide-1{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../images/cover1.jpg);
+}
+.slide-2{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../images/cover2.jpg);
+}
+.slide-3{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../images/cover3.jpg);
+}
+
+#heroSlider h6::after, #heroSlider h6::before{
+    content: "";
+    width: 40px;
+    height: 4px;
+    background-color: var(--wh1);
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    background-color: rgba(0,0,0,0.6);
+    width: 40px;
+    height: 70px;
+    margin: auto;
+
+}
+
+/*about*/
+#about p{
+    text-align: justify;
+}
+
+#about .divider{
+    width: 60px;
+    height: 2px;
+    display: block;
+    background-color: var(--or);
+}
+
+/*Intro Text*/
+
+.intro-text{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.intro-text p{
+    max-width: 500px;
+    margin: 16px auto 0 auto;
+}
+
+/*menu*/
+
+#menu .nav-pills .nav-link {
+    background-color: var(--wh1);
+    margin-left: 8px;
+    margin-right: 8px;
+    color: var(--bl1);
+    border-radius: 100px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+#menu .nav-pills .nav-link.active{
+    background-color: var(--or);
+    color: var(--wh1);
+}
