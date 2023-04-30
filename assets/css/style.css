@@ -45,6 +45,14 @@ section{
     padding-bottom: 120px;
 }
 
+.shadow-on-hover {
+    transition: all 0.3s;
+}
+
+.shadow-on-hover:hover {
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
 .btn{
     border-radius: 0;
     padding: 14px 38px;
@@ -136,4 +144,13 @@ section{
 #menu .nav-pills .nav-link.active{
     background-color: var(--or);
     color: var(--wh1);
+}
+
+.menu-item .stars {
+    color: var(--or);
+
+}
+
+.menu-item .small{
+    text-align: justify;
 }
