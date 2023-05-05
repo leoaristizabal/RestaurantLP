@@ -7,6 +7,7 @@
     --or:#f58d17;
     --or2:#d37810;
     --wh1:#fff;
+    --grisrgb: rgba(255,255,255,0.2);
 }
 
 
@@ -33,7 +34,7 @@ a:hover{
 }
 
 #logonav {
-    width: 70px !important;
+    width: 85px !important;
 }
 
 img{
@@ -146,6 +147,9 @@ section{
     color: var(--wh1);
 }
 
+.menu-item {
+    cursor: pointer;
+}
 .menu-item .stars {
     color: var(--or);
 
@@ -153,4 +157,59 @@ section{
 
 .menu-item .small{
     text-align: justify;
+}
+
+/*Features*/
+
+#features{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../images/cover2.jpg);
+}
+
+.feature{
+    border: 2px solid var(--grisrgb);
+}
+
+.feature .feature-icon{
+    width: 80px;
+    height: 80px;
+    background-color: var(--or);
+    color: var(--wh1);
+    font-size: 28px;
+    display: inline-grid;
+    align-items: center;
+    text-align: center;
+}
+
+/*Team*/
+
+.team-member img{
+    max-width: 140px;
+    box-shadow: -10px -10px 0 var(--or);
+    border-radius: 100px;
+}
+
+/*Reviews*/
+
+#reviews{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../images/cover3.jpg);
+}
+
+.review img{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+}
+
+.review .quote-icon{
+    font-size: 74px;
+    color: var(--or);
+    line-height: 1;
+}
+
+.review .stars {
+    color: var(--or);
+}
+
+#reviews .carousel-indicators{
+    margin-bottom: -3rem;
 }
